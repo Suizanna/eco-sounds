@@ -8,8 +8,6 @@ const title = document.querySelector(".song-title");
 const playBtn = document.querySelector(".play");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
-const navList = document.querySelectorAll(".nav-item");
-// const audio = new Audio();
 
 let isPlay = false;
 
@@ -19,25 +17,12 @@ const songs = ["Forest", "Solovey", "Drozd", "Zarynka", "Javoronok", "Slavka"];
 // Default song
 let songIndx = 0;
 
-// function changeImg(e) {
-//   if (e.target.classList.contains(".nav-item")) {
-//     audio.src = `assets/audio/${e.target.dataset.sound}.mp3`;
-//     // images.src = `assets/img/${e.target.dataset.image}.jpg`;
-//   }
-//   //   console.log(e.target.dataset.sound);
-// }
-// navList.forEach((element) => {
-//   element.addEventListener("click", changeImg);
-// });
-
 // Init
 function loadSong(song) {
   title.innerHTML = song;
   audio.src = `assets/audio/${song}.mp3`;
-  //   audio.src = `./assets/img/${el.target.dataset.item}.mp3`;
   // change background img
-  //   audio.src = `assets/img/${songIndx}.jpg`;
-  //   main.style.backgroundImage = `url(./assets/img/${el.target.dataset.item}.jpg)`;
+  //  main.src = `img/${songIndx}.jpg`;
 }
 loadSong(songs[songIndx]);
 
@@ -53,9 +38,9 @@ function nextSong() {
 }
 // Prev
 function prevSong() {
+  //   if (songIndx < 0) {
   if (songIndx === 0) {
     songs.length - 1;
-    console.log(songIndx);
   } else {
     songIndx--;
   }
