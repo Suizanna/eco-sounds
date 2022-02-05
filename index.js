@@ -1,4 +1,4 @@
-const audio = document.querySelector("audio");
+// const audio = document.querySelector("audio");
 const player = document.querySelector(".player");
 const progressBar = document.querySelector(".progress-container");
 const progress = document.querySelector(".progress");
@@ -8,7 +8,7 @@ const title = document.querySelector(".song-title");
 const playBtn = document.querySelector(".play");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
-
+const audio = new Audio();
 let isPlay = false;
 
 // Song titles
