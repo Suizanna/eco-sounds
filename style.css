@@ -114,7 +114,8 @@ body {
 .prev {
   background-image: url("./assets/svg/prev.svg");
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: #bdae82;
+  color: #bdae82;
   border: 0;
 }
 
