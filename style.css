@@ -100,6 +100,26 @@ body {
   background-size: cover;
 }
 
+.buttons {
+  max-width: 220px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
 .play {
   width: 160px;
   height: 160px;
@@ -109,20 +129,6 @@ body {
   background-color: transparent;
   border: 0;
   transition: 0.3s;
-}
-
-.prev {
-  background-image: url("./assets/svg/prev.svg");
-  background-repeat: no-repeat;
-  background-color: #bdae82;
-  color: #bdae82;
-  border: 0;
-}
-
-.next {
-  background-image: url("./assets/svg/next.svg");
-  background-color: transparent;
-  border: 0;
 }
 .play:focus {
   border: 0;
@@ -135,6 +141,36 @@ body {
   background-image: url("./assets/svg/pause.svg");
   background-repeat: no-repeat;
 }
+
+/* .prev {
+  background-image: url("./assets/svg/prev.svg");
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.next {
+  background-image: url("./assets/svg/next.svg");
+  background-color: transparent;
+  border: 0;
+} */
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #bdae82;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 63px;
+  cursor: pointer;
+}
+.progress {
+  border-radius: 5px;
+  height: 6px;
+  /* width: 150px; */
+  background: #434343;
+}
+
 /* footer */
 .footer {
   background-color: #000;
@@ -184,39 +220,9 @@ body {
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 }
-/* ============ */
-.song-title {
-  font-style: normal;
-  font-weight: bold;
-  /* font-size: 24px; */
-  font-size: 38px;
-  line-height: 28px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 50px;
-}
-.progress-container {
-  width: 100%;
-  height: 10px;
-  background-color: #bdae82;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  margin-top: 63px;
-  cursor: pointer;
-  /* outline: 1px solid red; */
-}
-.progress {
-  border-radius: 5px;
-  height: 6px;
-  /* width: 150px; */
-  background: #434343;
-}
-/* .song:hover {
-  color: #bdae82;
-} */
 
-.range {
+/* ============ */
+/* .range {
   background: linear-gradient(
     to right,
     white 0%,
@@ -241,32 +247,8 @@ body {
   cursor: pointer;
   background: #434343;
   /* opacity: 0; */
-  transition: 0.3s;
-}
-
-.buttons {
-  /* max-width: 220px;
-   width: 100%; */
-  width: 220px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 45px;
-  /* margin-bottom: 20px; */
-}
-
-.button {
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.3s ease-out;
-}
+/* transition: 0.3s; */
+/* }  */
 
 /* .player {
   max-width: 388px;
